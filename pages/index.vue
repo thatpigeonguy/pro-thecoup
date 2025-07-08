@@ -23,9 +23,3 @@
         </main>
     </div>
 </template>
-
-<script lang="ts">
-import { WhyMeSection } from '#components';
-
-
-</script>
