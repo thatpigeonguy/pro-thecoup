@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
     <div class="text-text-main font-sans leading-6">
         <main>
@@ -7,6 +11,10 @@
 
             <section class="py-16 px-0" id="services">
                 <ServicesSection />
+            </section>
+
+            <section class="py-16 px-0" id="services">
+                <GallerySection :images="carouselImages" />
             </section>
 
             <section class="py-16 px-0" id="why-me">
@@ -23,3 +31,12 @@
         </main>
     </div>
 </template>
+
+<script setup lang="ts">
+import GallerySection from "~/components/GallerySection.vue";
+
+const carouselImages = ref([
+  { src: "/img/procuts.webp" },
+  { src: "/img/mavica.webp" }
+]);
+</script>
