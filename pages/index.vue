@@ -35,6 +35,11 @@
 <script setup lang="ts">
 import GallerySection from "~/components/GallerySection.vue";
 
+useHead({
+  title: 'Pro.TheCoup.xyz',          // this page only
+  titleTemplate: '%s – TheCoup.xyz',  // optional suffix
+})
+
 const carouselImages = ref([
   { src: "/img/procuts.webp" },
   { src: "/img/mavica.webp" }
