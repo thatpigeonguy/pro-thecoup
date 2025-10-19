@@ -36,8 +36,8 @@
 import GallerySection from "~/components/GallerySection.vue";
 
 useHead({
-  title: 'Pro.TheCoup.xyz',          // this page only
-  titleTemplate: '%s – TheCoup.xyz',  // optional suffix
+  title: 'Pro.TheCoup.xyz',
+  titleTemplate: '%s - TheCoup.xyz',
 })
 
 const carouselImages = ref([

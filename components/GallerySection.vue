@@ -27,19 +27,17 @@
 import {
   Swiper,
   SwiperSlide,
-} from "swiper/vue"; // Import Swiper Vue components
+} from "swiper/vue";
 import {
   Navigation,
   Pagination,
   Autoplay,
-} from "swiper/modules"; // Import Swiper modules
+} from "swiper/modules";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// Define props for the images
 const props = defineProps({
   images: {
     type: Array,
@@ -69,14 +67,14 @@ const onSlideChange = () => {
   width: 100%;
   max-width: 800px; /* Adjust as needed */
   margin: 0 auto;
-  overflow: hidden; /* Important for responsive images */
+  overflow: hidden;
   border-radius: 15px;
   border: 1px solid #444;
 }
 
 .swiper {
   width: 100%;
-  height: 400px; /* Set a default height or make it dynamic */
+  height: 400px;
 }
 
 .swiper-slide {
@@ -88,11 +86,9 @@ const onSlideChange = () => {
 .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Cover the slide area, cropping if necessary */
+  object-fit: cover;
   display: block;
 }
-
-/* Optional: Custom styles for navigation/pagination if needed */
 .swiper-button-next,
 .swiper-button-prev {
   color: #00ffff;
