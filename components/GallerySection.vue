@@ -16,7 +16,8 @@
         @slideChange="onSlideChange"
       >
         <swiper-slide v-for="(image, index) in images" :key="index">
-          <img :src="image.src" :alt="image.alt" />
+          <a :href="image.href" target="_blank"><img :src="image.src" :alt="image.alt" /></a>
+          
         </swiper-slide>
       </swiper>
     </client-only>
@@ -83,7 +84,7 @@ const onSlideChange = () => {
   align-items: center;
 }
 
-.swiper-slide img {
+.swiper-slide img a {
   width: 100%;
   height: 100%;
   object-fit: cover;

@@ -41,7 +41,7 @@ useHead({
 })
 
 const carouselImages = ref([
-  { src: "/img/procuts.webp" },
-  { src: "/img/mavica.webp" }
+  { src: "/img/procuts.webp", href: "https://procutshairsalons.com" },
+  { src: "/img/mavica.webp", href: "https://mavica.org" }
 ]);
 </script>
