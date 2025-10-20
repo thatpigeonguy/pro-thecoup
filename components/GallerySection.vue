@@ -1,5 +1,11 @@
 <template>
-  <div class="carousel-container">
+  <div class="text-center px-0">
+    <div class="max-w-5xl my-0 mx-auto py-0 px-5">
+      <h2 class="font-bold text-4xl text-center text-accent">My Projects</h2>
+      <p class="text-xl text-text-secondary max-w-xl mt-4 mx-auto mb-8">Click on a project to learn more about it!</p>
+    </div>
+  </div>
+    <div class="carousel-container">
     <client-only>
       <swiper
         :modules="modules"
