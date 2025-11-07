@@ -88,14 +88,22 @@ const onSlideChange = () => {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
-.swiper-slide img a {
+.swiper-slide a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #00ffff;
